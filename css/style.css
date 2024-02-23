@@ -158,3 +158,13 @@ h3 {
   list-style-type: none;
   display: inline-block;
 }
+
+section {
+  padding: 94px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+}
