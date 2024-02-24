@@ -72,12 +72,10 @@
 
 .logo .navy-blue {
   color: var(--body-text-color);
-  margin-left: -5px;
 }
 
 .logo .cloud {
   color: var(--secondary-bkg-color);
-  margin-left: -5px;
 }
 .contact-info > a {
   text-decoration: none;
@@ -167,4 +165,12 @@ section {
   display: flex;
   justify-content: center;
   width: 1200px;
+}
+
+.global-header,
+.logo,
+.navbar > .menu-items,
+.contact-info {
+  display: flex;
+  flex-direction: row;
 }
