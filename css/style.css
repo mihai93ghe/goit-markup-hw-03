@@ -169,8 +169,9 @@ section {
 
 .global-header,
 .logo,
-.navbar > .menu-items,
+.navbar,
 .contact-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
