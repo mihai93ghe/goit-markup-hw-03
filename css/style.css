@@ -30,11 +30,16 @@
   font-weight: 800;
 }
 
+.global-header {
+  display: flex;
+  align-items: baseline;
+}
 .menu-items > li > a {
   text-decoration: none;
 }
 .menu-items > li {
   list-style-type: none;
+  padding-left: 40px;
 }
 .menu-items > li:hover {
   color: var(--hover-color);
@@ -44,6 +49,11 @@
 .menu-items > li > a:visited {
   color: inherit;
 }
+
+.menu-items {
+  display: flex;
+  flex-direction: row;
+}
 .order-button {
   background-color: #4d5ae5;
   font-family: "Roboto", sans-serif;
@@ -52,6 +62,11 @@
   border-color: #4d5ae5;
   color: #fff;
   font-weight: 500;
+  width: 169px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .order-button:hover {
@@ -80,6 +95,7 @@
 .contact-info > a {
   text-decoration: none;
   color: var(--body-text-color);
+  padding-left: 40px;
 }
 
 .contact-info > a:hover,
@@ -89,13 +105,17 @@
 
 .team-members > li {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 24px;
 }
 
 h1,
 h2 {
   font-weight: 700;
   color: var(--body-text-color);
+  display: flex;
 }
 
 h3 {
@@ -105,10 +125,16 @@ h3 {
 
 .hero-section {
   background-color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-width: 1200px;
 }
 
 .hero-section > h1 {
   color: #ffffff;
+  width: 204px;
 }
 
 .team-section {
@@ -118,11 +144,23 @@ h3 {
 .footer-section {
   background-color: #2e2f42;
   color: var(--secondary-bkg-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 1200px;
+  padding: 100px 1020px 100px 156px;
 }
 
 .features > li {
   list-style-type: none;
-  display: inline-block;
+  display: block;
+  width: 264px;
+  padding-left: 24px;
+}
+
+.features {
+  display: flex;
 }
 
 .filter-buttons > li > button {
@@ -149,29 +187,56 @@ h3 {
 
 .filter-buttons > li {
   list-style-type: none;
-  display: inline-block;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .project-cards > li {
   list-style-type: none;
-  display: inline-block;
+  display: flex;
 }
 
 section {
   padding: 94px 0;
+  width: 1200px;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  width: 1200px;
 }
 
-.global-header,
-.logo,
-.navbar,
-.contact-info {
+.title {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.offer-images {
+  display: flex;
+  justify-content: center;
+}
+
+.offer-images > img {
+  padding-left: 24px;
+  padding-top: 72px;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-cards > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 24px;
 }
